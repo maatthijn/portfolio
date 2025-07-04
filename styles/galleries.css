@@ -1,0 +1,126 @@
+@import url(main.css);
+
+body {
+    background-image: url('../images/bg_5.png');
+    font-size: 1.25rem;
+    min-height: 100vh !important;
+}
+
+.main-nav {
+    z-index: 1;
+}
+
+.contents {
+    min-height: 80vh !important;
+    padding: 0 5vw 0 5vw;
+}
+
+img {
+    cursor: pointer;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+#a {
+    padding-top: 5vw;
+}
+
+#b {
+    padding-bottom: 3vw;
+}
+
+.img-hover-zoom {
+    overflow: hidden;
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+.img-hover-zoom img {
+    transition: 1s ease;
+    margin-bottom: 0 !important;
+    filter: grayscale(100%);
+    opacity: 0;
+}
+
+.img-hover-zoom:hover img {
+    transform: scale(1.25);
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    margin: auto ;
+    max-width: 100vh;
+    max-height: 100%;
+    padding: 0 20px;
+    background-color: rgba(0,0,0,0);
+    justify-content: center;
+    align-items: center;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    max-height: 5vh;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+    color: #f4afc2;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, .5);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.fade-in-modal {
+    animation: fadeInAnimation ease .6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.fade-out-modal {
+    animation: fadeOutAnimation ease .6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+/* Additional revealing content */
+.img-image {
+    opacity: 0;
+    transform: translateY(25vh);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.img-image.visible {
+    opacity: 0.3;
+    transform: translateY(0);
+}

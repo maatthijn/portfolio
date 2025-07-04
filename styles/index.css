@@ -1,0 +1,37 @@
+@import url(main.css);
+
+body {
+    background-image: url("../images/bg.png");
+    letter-spacing: .2vw;
+}
+
+.display-4 {
+    font-weight: 400;
+}
+
+.row {
+    min-width: 50vw;
+}
+
+.row * {
+    padding: 0 1.5vw 0 1.5vw;
+}
+
+#salut {
+    font-family: 'Mrs Saint Delafield';
+    letter-spacing: 0;
+    color: #f4afc2;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, .5);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 0px 0px 0px white;
+    transition: color .5s, text-shadow .5s;
+}
+
+a:hover {
+    color: #f4afc2;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, .5);
+}

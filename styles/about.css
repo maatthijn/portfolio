@@ -1,0 +1,42 @@
+@import url(main.css);
+
+body {
+    background-image: url('../images/bg_2.png');
+    font-size: 1.25rem;
+    min-height: 100vh !important;
+}
+
+.pinky {
+    color: #f4afc2;
+}
+
+.content-nav *, .icon-nav * {
+    color: #f4afc2 !important;
+    font-family: 'Mrs Saint Delafield';
+    text-decoration: none;
+    transition: color .5s, text-shadow .5s;
+    text-align: center;
+}
+
+.nav *:hover {
+    color: #f4afc2;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, .5);
+}
+
+.contents {
+    min-height: 80vh !important;
+    padding: 0 15vw 0 15vw;
+}
+
+.content-nav {
+    font-size: 2.5rem;
+}
+
+.content-nav * {
+    padding-right: 2.5vw;
+    padding-left: 2.5vw;
+}
+
+.content-p {
+    text-align: justify;
+}
