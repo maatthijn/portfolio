@@ -25,7 +25,7 @@ for (var i = 0; i < images.length; i++) {
 }
 
 // Closing modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementById("image-close");
 span.onclick = function() {
     for (var j = 0; j < images.length; j++) {
         images[j].style.pointerEvents = "all !important";
@@ -50,6 +50,7 @@ const startImages = document.querySelectorAll(".img-image");
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
+        // console.log("Observed:", entry.target, "Visible:", entry.isIntersecting);
         if (entry.isIntersecting) {
             entry.target.classList.add("visible");
             observer.unobserve(entry.target);
@@ -60,5 +61,5 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 startImages.forEach(img => {
-  observer.observe(img);
+    observer.observe(img);
 });

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us" translate="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +13,7 @@
 <body class="seq-anim">
     <div id="content-blocker"></div>
     <div class="min-vw-50">
+        <!--
         <div class="main-nav nav row min-vw-50 text-center justify-content-center sticky-top seq-anim">
             <a class="col-lg-2 nav-option" href="#">Galleries</a>
             <a class="col-lg-2 nav-option" href="blog.html">Blog</a>
@@ -20,13 +21,38 @@
             <a class="col-lg-2 nav-option" href="about.html">About</a>
             <a class="col-lg-2 nav-option" href="contact.html">Contact</a>
         </div>
+        -->
 
-        <div class="min-vh-100 min-vw-50 justify-content-center align-items-center d-flex flex-column contents">
+        <!-- Mobile vers update -->
+        <div id="desktop-nav" class="main-nav nav row min-vw-50 text-center justify-content-center sticky-top seq-anim">
+            <a class="col-lg-2 nav-option" href="#">Galleries</a>
+            <a class="col-lg-2 nav-option" href="blog.html">Blog</a>
+            <a class="col-lg-4 brand" href="index.html">Matthijn</a>
+            <a class="col-lg-2 nav-option" href="about.html">About</a>
+            <a class="col-lg-2 nav-option" href="contact.html">Contact</a>
+
+        </div>
+        <div id="mobile-nav" class="main-nav nav row min-vw-50 text-center justify-content-center sticky-top seq-anim">
+            <a class="col-sm-10 brand" href="index.html">Matthijn</a>
+            <a id="menu-toggle" class="col-sm-2"><i class="bi bi-three-dots-vertical"></i></a>
+        </div>
+        <div>
+            <div id="menu-modal" class="modal">
+                <span class="close" id="menu-close">&times;</span>
+                <a class="nav-option" href="#">Galleries</a>
+                <a class="nav-option" href="blog.html">Blog</a>
+                <a class="nav-option" href="about.html">About</a>
+                <a class="nav-option" href="contact.html">Contact</a>
+            </div>
+        </div>
+        <!-- End mobile vers update -->
+
+        <div class="min-vh-100 min-vw-50 justify-content-center align-items-center d-flex flex-column contents" translate="yes">
             <p class="display-4 text-uppercase seq-anim" id="a">Galleries</p>
             <p id="b" class=" seq-anim">Here you can view all of my best works. Enjoy my photographies!</p>
             <div class="row seq-anim">
                 <!-- First row -->
-                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                <div class="col-lg-4 col-md-4 col-sm-4 mb-4 mb-lg-0 image-row">
                     <div class="img-hover-zoom">
                         <img
                             src="images/creative/image (1).jpg"
@@ -72,7 +98,7 @@
                 </div>
                 
                 <!-- Second row -->
-                <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="col-lg-4 col-md-4 col-sm-4 mb-4 mb-lg-0 image-row">
                     <div class="img-hover-zoom">
                         <img
                             src="images/creative/image (4).jpg"
@@ -117,7 +143,7 @@
                 </div>
                 
                 <!-- Third row -->
-                <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="col-lg-4 col-md-4 col-sm-4 mb-4 mb-lg-0 image-row">
                     <div class="img-hover-zoom">
                         <img
                             src="images/creative/image (5).jpg"
@@ -164,11 +190,12 @@
         </div>
         <!-- Modal -->
         <div id="image-modal" class="modal">
-            <span class="close">&times;</span>
+            <span class="close" id="image-close">&times;</span>
             <img class="modal-content" id="img01" style="pointer-events: none;">
         </div>
     </div>
     <script src="scripts/galleries.js"></script>
     <script src="scripts/main.js"></script>
+    <script src="scripts/mobile-modal.js"></script>
 </body>
 </html>

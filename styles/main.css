@@ -65,7 +65,7 @@ body {
 }
 
 .main-nav * {
-    font-size: 3rem;
+    font-size: 1.5vw;
 }
 
 .nav *:hover {
@@ -112,6 +112,7 @@ body {
     padding: 0 0 0 0;
     font-family: 'Mrs Saint Delafield';
     color: #f4afc2;
+    font-size: 3vw !important;
 }
 
 .nav-option {
@@ -123,7 +124,7 @@ body {
     font-family: 'Nunito Sans';
 }
 
-.nav * {
+.nav *, #menu-modal * {
     text-decoration: none;
     transition: color .5s, text-shadow .5s;
     text-align: center;
@@ -138,4 +139,144 @@ body {
 .body-overflow-off {
     overflow: hidden;
     padding-right: 15px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    margin: auto ;
+    max-width: 100vh;
+    max-height: 100%;
+    padding: 0 20px;
+    background-color: rgba(0,0,0,0);
+    justify-content: center;
+    align-items: center;
+}
+
+.fade-in-modal {
+    animation: fadeInAnimation ease .6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.fade-out-modal {
+    animation: fadeOutAnimation ease .6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+    color: #f4afc2;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, .5);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* For mobile (don't forget to transfer it to main) */
+#menu-toggle {
+    color: #ffffff;
+}
+
+#mobile-nav {
+    display: none;
+}
+
+#mobile-nav * {
+    width: auto;
+    font-size: 7.5vw;
+}
+
+#mobile-nav .brand {
+    position: relative;
+    right: 30vw;
+}
+
+#mobile-nav #menu-toggle {
+    position: relative;
+    left: 33vw;
+    padding: 0;
+}
+
+#menu-modal {
+    z-index: 9999;
+    flex-direction: column;
+}
+
+#menu-modal * {
+    margin: 0;
+    font-size: 4vw;
+    padding: 2vh 0;
+}
+
+@media (max-width: 992px) {
+    body {
+        overflow-x: hidden;
+        font-size: 4vw;
+    }
+
+    #desktop-nav {
+        display: none;
+    }
+
+    #mobile-nav {
+        display: flex;
+    }
+    
+    .brand {
+        font-size: 7.5vw !important;
+    }
+
+    .contents {
+        padding: 5vh 8vw !important; 
+        font-size: 4vw;
+    }
+
+    .nav-option, #menu-close{
+        color: #f4afc2;
+        text-shadow: 0px 0px 5px rgba(255, 255, 255, .5);
+    }
+
+    .nav-option:active, #menu-close:active, .nav-option:hover, #menu-close:hover {
+        color: #ffffff;
+        text-shadow: 0px 0px 0px rgba(255, 255, 255, .5);
+    }
+
+    .body-overflow-off {
+        padding: 0;
+    }
+
+    .offcanvas-end {
+        width: 100vw !important;
+    }
+
+    .offcanvas-header {
+        padding: 4vh 20vw 0 8vw !important;
+    }
+
+    .offcanvas-body {
+        padding: 0 8vw 3vh 8vw !important;
+        font-size: 4vw;
+    }
 }
