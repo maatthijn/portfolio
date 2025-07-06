@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us" translate="no">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,36 +12,46 @@
     </head>
     <body class="seq-anim">
         <div id="content-blocker"></div>
-        <div class="main-nav nav row min-vw-50 text-center justify-content-center sticky-top seq-anim">
+
+        <!-- Mobile vers update -->
+        <div id="desktop-nav" class="main-nav nav row min-vw-50 text-center justify-content-center sticky-top seq-anim">
             <a class="col-lg-2 nav-option" href="galleries.html">Galleries</a>
             <a class="col-lg-2 nav-option" href="blog.html">Blog</a>
             <a class="col-lg-4 brand" href="index.html">Matthijn</a>
             <a class="col-lg-2 nav-option" href="about.html">About</a>
             <a class="col-lg-2 nav-option" href="#">Contact</a>
-        </div>
 
-        <div class="min-vh-100 min-vw-50 justify-content-center align-items-center d-flex flex-column contents">
+        </div>
+        <div id="mobile-nav" class="main-nav nav row min-vw-50 text-center justify-content-center sticky-top seq-anim">
+            <a class="col-sm-10 brand" href="index.html">Matthijn</a>
+            <a id="menu-toggle" class="col-sm-2"><i class="bi bi-three-dots-vertical"></i></a>
+        </div>
+        <div id="menu-modal" class="modal">
+            <span class="close" id="menu-close">&times;</span>
+            <a class="nav-option" href="galleries.html">Galleries</a>
+            <a class="nav-option" href="blog.html">Blog</a>
+            <a class="nav-option" href="about.html">About</a>
+            <a class="nav-option" href="#">Contact</a>
+        </div>
+        <!-- End mobile vers update -->
+
+        <div class="min-vh-100 min-vw-50 justify-content-center align-items-center d-flex flex-column contents" translate="yes">
             <p id="b" class="content-p seq-anim">
                 Currently, we're working on creating form. As of now, please contact through my available social medias!
             </p>
             <div class="justify-content-center align-items-center d-flex flex-column">
                 <ul class="nav justify-content-center icon-nav">
-                    <li class="nav-item seq-anim" id="h">
+                    <li class="nav-item seq-anim">
                         <a class="nav-link" href="https://www.instagram.com/maatthijn" target="_blank">
                             <i class="bi bi-instagram"></i>
                         </a>
                     </li>
-                    <li class="nav-item seq-anim" id="i">
-                        <a class="nav-link" href="https://www.facebook.com/maulana.m.hambali" target="_blank">
-                            <i class="bi bi-facebook"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item seq-anim" id="j">
+                    <li class="nav-item seq-anim">
                         <a class="nav-link" href="https://www.linkedin.com/in/hafidh-maulana-matin/" target="_blank">
                             <i class="bi bi-linkedin"></i>
                         </a>
                     </li>
-                    <li class="nav-item seq-anim" id="j">
+                    <li class="nav-item seq-anim">
                         <a class="nav-link" href="mailto:maulanamatin@gmail.com" target="_blank">
                             <i class="bi bi-envelope-fill"></i>
                         </a>
@@ -50,5 +60,6 @@
             </div>
         </div>
     <script src="scripts/main.js"></script>
+    <script src="scripts/mobile-modal.js"></script>
     </body>
 </html>

@@ -38,6 +38,7 @@ fetch("data/blog.json")
             `;
 
             tbody.appendChild(row);
+
         });
 
         // Add click handler to table rows
