@@ -1,11 +1,7 @@
 Portfolio by Matthijn
 
----------
-|  LOG  |
----------
-
-< Version 1.1 >
------
+Version 1.1
+---
 What's new?
 1. Enables responsive webpages for mobile users
 2. Translates all blogs into English
