@@ -68,3 +68,18 @@ body {
 .offcanvas-body {
     padding: 1rem 5rem 1rem 3rem;
 }
+
+@media (max-width: 992px) {
+    .offcanvas-end {
+        width: 100vw !important;
+    }
+
+    .offcanvas-header {
+        padding: 4vh 20vw 0 8vw !important;
+    }
+
+    .offcanvas-body {
+        padding: 0 8vw 3vh 8vw !important;
+        font-size: 4vw;
+    }
+}

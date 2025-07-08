@@ -230,6 +230,20 @@ body {
     padding: 2vh 0;
 }
 
+#menu-modal .close {
+    font-size: 40px;
+}
+
+#menu-modal .nav-option, #menu-modal #menu-close{
+    color: #f4afc2;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, .5);
+}
+
+#menu-modal .nav-option:active, #menu-modal #menu-close:active, #menu-modal .nav-option:hover, #menu-modal #menu-close:hover {
+    color: #ffffff;
+    text-shadow: 0px 0px 0px rgba(255, 255, 255, .5);
+}
+
 @media (max-width: 992px) {
     body {
         overflow-x: hidden;
@@ -253,30 +267,7 @@ body {
         font-size: 4vw;
     }
 
-    .nav-option, #menu-close{
-        color: #f4afc2;
-        text-shadow: 0px 0px 5px rgba(255, 255, 255, .5);
-    }
-
-    .nav-option:active, #menu-close:active, .nav-option:hover, #menu-close:hover {
-        color: #ffffff;
-        text-shadow: 0px 0px 0px rgba(255, 255, 255, .5);
-    }
-
     .body-overflow-off {
         padding: 0;
-    }
-
-    .offcanvas-end {
-        width: 100vw !important;
-    }
-
-    .offcanvas-header {
-        padding: 4vh 20vw 0 8vw !important;
-    }
-
-    .offcanvas-body {
-        padding: 0 8vw 3vh 8vw !important;
-        font-size: 4vw;
     }
 }

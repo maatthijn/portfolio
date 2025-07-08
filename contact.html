@@ -3,6 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Hafidh Maulana Matin">
+        <meta name="description" content="Matthijn's creative and professional portfolio — including photography, blogs, and web-design work.">
+        <meta name="keywords" content="Portfolio, photography, videography, blog, creative web design">
+
+        <!-- Open Graph (for social preview) -->
+        <meta property="og:title" content="Matthijn's Portfolio">
+        <meta property="og:description" content="Discover Matthijn's work in photography, web design, and more.">
+        <meta property="og:image" content="https://maatthijn.github.io/portfolio/preview.png">
+        <meta property="og:url" content="https://maatthijn.github.io/portfolio/">
+        <meta property="og:type" content="website">
+        <meta name="twitter:card" content="summary_large_image">
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="styles/contact.css">
@@ -11,6 +22,7 @@
         <title>Contact | HAFIDH MAULANA MATIN</title>
     </head>
     <body class="seq-anim">
+        <noscript>You need to enable JavaScript to access this website.</noscript>
         <div id="content-blocker"></div>
 
         <!-- Mobile vers update -->
@@ -37,29 +49,28 @@
 
         <div class="min-vh-100 min-vw-50 justify-content-center align-items-center d-flex flex-column contents" translate="yes">
             <p id="b" class="content-p seq-anim">
-                Currently, we're working on creating form. As of now, please contact through my available social medias!
+                Feel free to contact me by filling out a form below!
             </p>
-            <div class="justify-content-center align-items-center d-flex flex-column">
-                <ul class="nav justify-content-center icon-nav">
-                    <li class="nav-item seq-anim">
-                        <a class="nav-link" href="https://www.instagram.com/maatthijn" target="_blank">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item seq-anim">
-                        <a class="nav-link" href="https://www.linkedin.com/in/hafidh-maulana-matin/" target="_blank">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item seq-anim">
-                        <a class="nav-link" href="mailto:maulanamatin@gmail.com" target="_blank">
-                            <i class="bi bi-envelope-fill"></i>
-                        </a>
-                    </li>
-                </ul>
+            <div class="seq-anim contact-container">
+                <form class="contact-form seq-anim" id="contact-form">
+                    <div class="form-content seq-anim">
+                        <label>Name:</label>
+                        <input type="text" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-content seq-anim">
+                        <label>E-mail:</label>
+                        <input type="email" name="email" placeholder="email@example.xyz" required>
+                    </div>
+                    <div class="form-content seq-anim">
+                        <label>Messages:</label>
+                        <textarea name="message" placeholder="Type your message here" rows="6" required autocomplete="off"></textarea>
+                    </div>
+                    <button type="submit" class="seq-anim">Submit</button>
+                </form>
             </div>
         </div>
     <script src="scripts/main.js"></script>
     <script src="scripts/mobile-modal.js"></script>
+    <script src="scripts/contact.js"></script>
     </body>
 </html>

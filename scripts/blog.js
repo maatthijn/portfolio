@@ -8,7 +8,7 @@ function estimateReadingTime(paragraphs) {
     const text = paragraphs.join(" ");
     const wordCount = text.trim().split(/\s+/).length;
     const readingTime = Math.floor(wordCount / 250);
-    return { wordCount, readingTime };
+    return {wordCount, readingTime};
 }
 
 // Fetching blog data
@@ -25,7 +25,7 @@ fetch("data/blog.json")
             // Create table row
             const row = document.createElement("tr");
             const date_1 = dayjs(blog.datetime);
-            const { wordCount, readingTime } = estimateReadingTime(blog.paragraphs);
+            const {wordCount, readingTime} = estimateReadingTime(blog.paragraphs);
 
             row.classList.add("blog-row");
             row.setAttribute("data-blog-id", key);
