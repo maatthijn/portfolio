@@ -1,5 +1,14 @@
 Portfolio by Matthijn
 
+Version 1.2
+---
+What's new?
+1. Fixed close button in mobile menu that appeared too small (for no reason, I excluded the close button span element)
+2. Fixed naming on my JSON files that broke blog's sorting mechanism (I typed a wrong datetime format)
+3. Added form on the "Contact" section
+4. Converted all images into .webp extension
+5. Enabled SEO for my portfolio (I'm not sure this will work)
+
 Version 1.1
 ---
 What's new?
