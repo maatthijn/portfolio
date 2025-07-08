@@ -1,5 +1,10 @@
 Portfolio by Matthijn
 
+Version 1.2.1
+---
+What's new?
+1. Added a file for Google Search Console verification
+
 Version 1.2
 ---
 What's new?
