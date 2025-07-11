@@ -1,5 +1,13 @@
 Portfolio by Matthijn
 
+Version 1.2.2
+---
+So many updates that I've implemented on the HTML files for search engine optimization.
+
+What's new?
+1. Updated all HTML files to optimize Google search engine, hopefully...
+2. Updated all typos in file addressses, such as my meta open graph's picture directory
+
 Version 1.2.1
 ---
 What's new?
