@@ -195,6 +195,11 @@ body {
 }
 
 /* For mobile (don't forget to transfer it to main) */
+#desktop-nav * {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 #menu-toggle {
     color: #ffffff;
 }
