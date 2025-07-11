@@ -1,5 +1,11 @@
 Portfolio by Matthijn
 
+Version 1.2.3
+---
+What's new?
+1. Updated my icon and HTML meta icon because it won't appear on search engine
+2. Fixed paddings on desktop navbar
+
 Version 1.2.2
 ---
 So many updates that I've implemented on the HTML files for search engine optimization.
