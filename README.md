@@ -5,6 +5,7 @@ Version 1.2.3
 What's new?
 1. Updated my icon and HTML meta icon because it won't appear on search engine
 2. Fixed paddings on desktop navbar
+3. Added a canonical URL
 
 Version 1.2.2
 ---
