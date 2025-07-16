@@ -1,4 +1,6 @@
-Portfolio by Matthijn
+# Portfolio by Matthijn
+
+**Note: This is the first generation of my portfolio, which will be unused. Check https://maatthijn.github.io/ for the latest version of my portfolio!**
 
 Version 1.2.3
 ---
